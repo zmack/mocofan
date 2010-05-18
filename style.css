@@ -49,3 +49,14 @@ strong.author {
 li:hover strong.author {
   background-color: #EDE;
 }
+
+ol ul li {
+  -webkit-transition-duration: .25s;
+}
+
+li:hover li.positive {
+  color: #181;
+}
+li:hover li.negative {
+  color: #811;
+}

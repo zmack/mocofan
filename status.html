@@ -4,6 +4,25 @@
 		<title>Mocofaneala</title>
 		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" lang="Javascript"></script>
+    <script>
+      $(function() {
+        $('ol ul li').each( function() {
+          var $this = $(this);
+          console.log($this.text()[0]);
+
+          switch( $this.text()[0] ) {
+            case '-':
+              $this.addClass('negative');
+            break;
+
+            case '+':
+              $this.addClass('positive');
+            break;
+          }
+        });
+      });
+    </script>
 	</head>
 	<body>
     <ol>
